@@ -1,0 +1,15 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.fondo{
+	-fx-background-color: linear-gradient(#3C3B3F, #605C3C);
+}
+
+.borde_rectangulo{
+	-fx-border-radius:20px;
+	-fx-border-color:green;
+	-fx-border-width: 2px;
+	-fx-padding: auto;
+}
+
+
+
