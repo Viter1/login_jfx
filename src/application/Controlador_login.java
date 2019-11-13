@@ -1,11 +1,20 @@
 package application;
 
+import java.io.IOException;
+
 import javafx.animation.FadeTransition;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
 import javafx.util.Duration;
 
 public class Controlador_login {
+	
+	@FXML
+	public AnchorPane login_principal;
 
 	@FXML
 	private Pane pane1;
@@ -18,8 +27,32 @@ public class Controlador_login {
 
 	@FXML
 	private Pane pane4;
-	
-	
+
+	@FXML
+	private void cerrar() {
+		try {
+			// Load the fxml file and create a new stage for the popup.
+//			FXMLLoader loader = new FXMLLoader();
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("Vista3.fxml"));
+			AnchorPane page = (AnchorPane) loader.load();
+			Stage homeStage = new Stage();
+			homeStage.setTitle("Homepage");
+			Scene scene = new Scene(page, 1335, 780);
+			homeStage.setScene(scene);
+//			homeStage.setMaximized(true);
+			Stage thisStage = (Stage) login_principal.getScene().getWindow();
+			thisStage.close();
+			
+			homeStage.show();
+			System.out.println("second stage ok");
+			
+
+		} catch (IOException e) {
+			e.printStackTrace();
+			System.out.println("second stage ko");
+		}
+	}
+
 	public void initialize() {
 
 //		pane1.setStyle("-fx-background-image: url('1.jpg')");
@@ -29,7 +62,7 @@ public class Controlador_login {
 		backgroundAnimation();
 
 	}
-	
+
 	private void backgroundAnimation() {
 
 		FadeTransition fadeTransition = new FadeTransition(Duration.seconds(5), pane4);

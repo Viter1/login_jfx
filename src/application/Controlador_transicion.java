@@ -15,6 +15,8 @@ import javafx.stage.Stage;
 import javafx.util.Duration;
 
 public class Controlador_transicion {
+	
+	AnchorPane page;
 
 	@FXML
 	ImageView image;
@@ -35,15 +37,17 @@ public class Controlador_transicion {
 //		this.main = main;
 //		this.stage = stage;
 //	}
+	
+
 
 	public void showHome() {
 		try {
 			// Load the fxml file and create a new stage for the popup.
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(Main.class.getResource("Vista.fxml"));
-			AnchorPane page = (AnchorPane) loader.load();
+			page = (AnchorPane) loader.load();
 			Stage homeStage = new Stage();
-			homeStage.setTitle("Main Menu");
+			homeStage.setTitle("Login");
 			Scene scene = new Scene(page, 630, 600);
 			homeStage.setScene(scene);
 //			homeStage.setMaximized(true);
