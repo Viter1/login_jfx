@@ -116,7 +116,6 @@ public class Controlador_transicion {
 								Stage thisStage = (Stage) rootPane.getScene().getWindow();
 								thisStage.close();
 								showHome();
-								System.out.println("------- splash screen is closed --------");
 							});
 
 						});

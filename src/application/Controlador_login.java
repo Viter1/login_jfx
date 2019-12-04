@@ -9,6 +9,7 @@ import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 import javafx.util.Duration;
 
 public class Controlador_login {
@@ -33,23 +34,23 @@ public class Controlador_login {
 		try {
 			// Load the fxml file and create a new stage for the popup.
 //			FXMLLoader loader = new FXMLLoader();
-			FXMLLoader loader = new FXMLLoader(getClass().getResource("Vista3.fxml"));
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("VistaWizard.fxml"));
 			AnchorPane page = (AnchorPane) loader.load();
 			Stage homeStage = new Stage();
-			homeStage.setTitle("Homepage");
-			Scene scene = new Scene(page, 1335, 780);
+			homeStage.initStyle(StageStyle.UNDECORATED);
+
+			
+			Scene scene = new Scene(page, 480, 600);
 			homeStage.setScene(scene);
 //			homeStage.setMaximized(true);
 			Stage thisStage = (Stage) login_principal.getScene().getWindow();
 			thisStage.close();
 			
 			homeStage.show();
-			System.out.println("second stage ok");
 			
 
 		} catch (IOException e) {
 			e.printStackTrace();
-			System.out.println("second stage ko");
 		}
 	}
 
