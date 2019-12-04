@@ -13,9 +13,8 @@ public class Main extends Application {
 	public void start(Stage primaryStage) {
 		try {
 			FXMLLoader loader = new FXMLLoader(getClass().getResource("Vista.fxml"));
-			AnchorPane root = (AnchorPane) loader.load();
-			Scene scene = new Scene(root , 500 , 400);
-			
+			AnchorPane root = (AnchorPane)loader.load();
+			Scene scene = new Scene(root , 600 , 600);
 			primaryStage.setScene(scene);
 			primaryStage.show();
 		} catch(Exception e) {
