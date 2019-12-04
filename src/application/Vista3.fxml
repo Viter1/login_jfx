@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1335.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controlador_homepage">
+   <children>
+      <BorderPane prefHeight="680.0" prefWidth="1335.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <VBox prefHeight="413.0" prefWidth="1335.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane prefHeight="95.0" prefWidth="1335.0" style="-fx-background-color: green;">
+                     <children>
+                        <ImageView fx:id="drawerImage" fitHeight="79.0" fitWidth="82.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@drawer.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     
+                        </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Pane fx:id="pane_uno" prefHeight="200.0" prefWidth="1335.0" styleClass="pane1" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <Pane fx:id="pane_dos" prefHeight="200.0" prefWidth="1335.0" styleClass="pane2" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <Pane fx:id="pane_tres" prefHeight="200.0" prefWidth="1335.0" styleClass="pane3" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <Pane fx:id="pane_cuatro" prefHeight="200.0" prefWidth="1335.0" styleClass="pane4" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </top>
+         <center>
+            <GridPane alignment="CENTER" maxHeight="200.0" maxWidth="700.0" minHeight="300.0" minWidth="300.0" prefHeight="348.0" prefWidth="1214.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <JFXButton maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="174.0" prefWidth="500.0" style="-fx-background-color: #00722e;" text="SECTION 1" textFill="WHITE" />
+                  <JFXButton prefHeight="174.0" prefWidth="500.0" style="-fx-background-color: #008f39;" text="SECTION 2" textFill="WHITE" GridPane.columnIndex="1" />
+                  <JFXButton prefHeight="174.0" prefWidth="500.0" style="-fx-background-color: #00b347;" text="SECTION 3" textFill="WHITE" GridPane.columnIndex="2" />
+                  <JFXButton prefHeight="174.0" prefWidth="500.0" style="-fx-background-color: #008000;" text="SECTION 4" textFill="WHITE" GridPane.rowIndex="1" />
+                  <JFXButton prefHeight="174.0" prefWidth="500.0" style="-fx-background-color: #0e813c;" text="SECTION 5" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <JFXButton prefHeight="174.0" prefWidth="500.0" style="-fx-background-color: #228b22;" text="SECTION 6" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+               </children>
+               <BorderPane.margin>
+                  <Insets left="300.0" right="300.0" />
+               </BorderPane.margin>
+            </GridPane>
+         </center>
+      </BorderPane>
+      <AnchorPane fx:id="opacityPane" layoutX="47.0" layoutY="340.0" prefHeight="680.0" prefWidth="1335.0" style="-fx-background-color: #000;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <AnchorPane fx:id="drawerPane" prefHeight="680.0" prefWidth="238.0" style="-fx-background-color: WHITE;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox prefHeight="680.0" prefWidth="244.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <JFXButton prefHeight="181.0" prefWidth="326.0" text="Button 1" textFill="#a8a8a8">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton alignment="CENTER" contentDisplay="CENTER" prefHeight="181.0" prefWidth="326.0" text="Button 2" textFill="#a8a8a8">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton prefHeight="181.0" prefWidth="326.0" text="Button 3" textFill="#a8a8a8" />
+                  <JFXButton prefHeight="181.0" prefWidth="326.0" text="Button 4" textFill="#a8a8a8" />
+                  <JFXButton prefHeight="181.0" prefWidth="326.0" text="Button 5" textFill="#a8a8a8" />
+                  <JFXButton prefHeight="181.0" prefWidth="326.0" text="Button 6" textFill="#a8a8a8" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

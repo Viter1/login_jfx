@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="login_principal" prefHeight="600.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controlador_wizard">
+   <children>
+      <AnchorPane fx:id="pane1" layoutX="133.0" layoutY="200.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #0A6405;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" layoutX="205.0" layoutY="77.0" prefHeight="45.0" prefWidth="72.0" text="Hola " textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="28.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="115.0" layoutY="122.0" minHeight="103.0" minWidth="209.0" prefHeight="115.0" prefWidth="269.0" text="El aguacate, conocido como el ‘oro verde’ de México, sigue rindiendo frutos" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="240.0" fitWidth="209.0" layoutX="141.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../avocado%20(1).png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane2" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #27B420;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" layoutX="175.0" layoutY="77.0" prefHeight="45.0" prefWidth="148.0" text="Aguacatero" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="28.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="115.0" layoutY="113.0" minHeight="103.0" minWidth="209.0" prefHeight="134.0" prefWidth="269.0" text="Su demanda ha crecido de manera significativa en Estados Unidos, donde se exporta el 80% de aguacate" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="216.0" fitWidth="209.0" layoutX="141.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../guacamole.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane3" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #55D24E;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" layoutX="175.0" layoutY="77.0" prefHeight="45.0" prefWidth="130.0" text="¿Que tal?" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="28.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="93.0" layoutY="122.0" prefHeight="108.0" prefWidth="305.0" text="Por ese motivo nuestra empresa quiere ofrecerte la siguiente variedad de productos " textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="216.0" fitWidth="209.0" layoutX="141.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../avocado%20(2).png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="boton_x" layoutX="398.0" layoutY="46.0" onAction="#cerrar_ventana" prefHeight="30.0" prefWidth="33.0" style="-fx-background-radius: 100; -fx-background-color: #00000050;" text="X" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="boton_derecha" layoutX="382.0" layoutY="508.0" onAction="#nextAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #8D6C0E; -fx-background-radius: 100;" text="&gt;" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="boton_izquierda" layoutX="43.0" layoutY="508.0" onAction="#backAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #8D6C0E; -fx-background-radius: 100;" text="&lt;" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></JFXButton>
+      <Label fx:id="countLabel" alignment="CENTER" layoutX="104.0" layoutY="525.0" prefHeight="17.0" prefWidth="269.0" text="1/3" textFill="WHITE" />
+
+   </children>
+</AnchorPane>
